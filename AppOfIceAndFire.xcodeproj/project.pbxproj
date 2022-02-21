@@ -11,14 +11,28 @@
 		0AD9063627C3721D0018CE3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9063527C3721D0018CE3D /* ContentView.swift */; };
 		0AD9063827C3721E0018CE3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD9063727C3721E0018CE3D /* Assets.xcassets */; };
 		0AD9063B27C3721E0018CE3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD9063A27C3721E0018CE3D /* Preview Assets.xcassets */; };
+		0AD9064727C372B20018CE3D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064227C372B20018CE3D /* NetworkService.swift */; };
+		0AD9064827C372B20018CE3D /* HousesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064327C372B20018CE3D /* HousesViewModel.swift */; };
+		0AD9064927C372B20018CE3D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064527C372B20018CE3D /* House.swift */; };
+		0AD9064B27C385D20018CE3D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064A27C385D20018CE3D /* Character.swift */; };
+		0AD9064D27C3A88A0018CE3D /* HouseOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064C27C3A88A0018CE3D /* HouseOverview.swift */; };
+		0AD9064F27C3ACCD0018CE3D /* HouseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9064E27C3ACCD0018CE3D /* HouseDetailView.swift */; };
+		0AD9065127C3AD9F0018CE3D /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9065027C3AD9F0018CE3D /* HouseDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AD9063027C3721D0018CE3D /* AppOfIceAndFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppOfIceAndFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD9063027C3721D0018CE3D /* Houses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD9063327C3721D0018CE3D /* AppOfIceAndFireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOfIceAndFireApp.swift; sourceTree = "<group>"; };
 		0AD9063527C3721D0018CE3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AD9063727C3721E0018CE3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AD9063A27C3721E0018CE3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AD9064227C372B20018CE3D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0AD9064327C372B20018CE3D /* HousesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewModel.swift; sourceTree = "<group>"; };
+		0AD9064527C372B20018CE3D /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		0AD9064A27C385D20018CE3D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0AD9064C27C3A88A0018CE3D /* HouseOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseOverview.swift; sourceTree = "<group>"; };
+		0AD9064E27C3ACCD0018CE3D /* HouseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailView.swift; sourceTree = "<group>"; };
+		0AD9065027C3AD9F0018CE3D /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +57,7 @@
 		0AD9063127C3721D0018CE3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AD9063027C3721D0018CE3D /* AppOfIceAndFire.app */,
+				0AD9063027C3721D0018CE3D /* Houses.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +65,9 @@
 		0AD9063227C3721D0018CE3D /* AppOfIceAndFire */ = {
 			isa = PBXGroup;
 			children = (
+				0AD9064427C372B20018CE3D /* Models */,
+				0AD9064127C372B20018CE3D /* Network */,
+				0AD9064627C372B20018CE3D /* Views */,
 				0AD9063327C3721D0018CE3D /* AppOfIceAndFireApp.swift */,
 				0AD9063527C3721D0018CE3D /* ContentView.swift */,
 				0AD9063727C3721E0018CE3D /* Assets.xcassets */,
@@ -65,6 +82,34 @@
 				0AD9063A27C3721E0018CE3D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AD9064127C372B20018CE3D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0AD9064227C372B20018CE3D /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0AD9064427C372B20018CE3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AD9064527C372B20018CE3D /* House.swift */,
+				0AD9064A27C385D20018CE3D /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AD9064627C372B20018CE3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AD9064327C372B20018CE3D /* HousesViewModel.swift */,
+				0AD9064C27C3A88A0018CE3D /* HouseOverview.swift */,
+				0AD9064E27C3ACCD0018CE3D /* HouseDetailView.swift */,
+				0AD9065027C3AD9F0018CE3D /* HouseDetailViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +129,7 @@
 			);
 			name = AppOfIceAndFire;
 			productName = AppOfIceAndFire;
-			productReference = 0AD9063027C3721D0018CE3D /* AppOfIceAndFire.app */;
+			productReference = 0AD9063027C3721D0018CE3D /* Houses.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD9063627C3721D0018CE3D /* ContentView.swift in Sources */,
+				0AD9064727C372B20018CE3D /* NetworkService.swift in Sources */,
+				0AD9064D27C3A88A0018CE3D /* HouseOverview.swift in Sources */,
+				0AD9065127C3AD9F0018CE3D /* HouseDetailViewModel.swift in Sources */,
+				0AD9064F27C3ACCD0018CE3D /* HouseDetailView.swift in Sources */,
 				0AD9063427C3721D0018CE3D /* AppOfIceAndFireApp.swift in Sources */,
+				0AD9064B27C385D20018CE3D /* Character.swift in Sources */,
+				0AD9064927C372B20018CE3D /* House.swift in Sources */,
+				0AD9064827C372B20018CE3D /* HousesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,7 +335,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dandjelkovic.AppOfIceAndFire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Houses;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +364,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.dandjelkovic.AppOfIceAndFire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Houses;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
